@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
+import Header from './components/Header/Header.jsx';
+import Home from './components/Home/Home.jsx';
+import Folder from './components/Folder/Folder.jsx';
+import Network from './components/Network/Network.jsx';
+import Terminal from './components/Terminal/Terminal.jsx';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app light">
+        <Sidebar />
+        <div className="main">
+          <Header />
+          <div className="content">
+            <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/folder" element={<Folder />} />
+              <Route path="/network" element={<Network />} />
+              <Route path="/terminal" element={<Terminal />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 

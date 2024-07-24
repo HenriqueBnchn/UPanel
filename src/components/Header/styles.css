@@ -1,0 +1,87 @@
+.header {
+  height: 100%;
+  max-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_section_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  height: 100%;
+
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+}
+
+.header_section_div h1{ 
+  font-size: 3.4rem;
+}
+.header_section_div h4{ 
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.header_nav{
+  display: flex;
+  position: relative;
+  gap: .6rem;
+}
+
+.searchbar_div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.searchbar_div input{
+  width: 20rem;
+  height: 4rem;
+  background-color: var(--bg-color);
+  border-radius: 4.9rem;
+  padding-left: 4rem;
+}
+
+.searchbar_div input::placeholder{
+  color: var(--text-3);
+}
+
+.searchbar_div svg{
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.control_panel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--bg-color-2);
+  box-shadow: 0.1rem 0.2rem 4rem 0.4rem var(--box-shadow);
+  margin-right: 2rem;
+}
+
+.options_div{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.options_div svg{
+  height: 2rem;
+  width: 2rem;
+  fill: var(--text-secondary);
+}
+
+.options_div :last-child{
+  height: 4rem;
+  width: 4rem;
+}
