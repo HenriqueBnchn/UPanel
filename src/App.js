@@ -5,7 +5,7 @@ import Header from './components/Header/Header.jsx';
 import Home from './components/Home/Home.jsx';
 import Folder from './components/Folder/Folder.jsx';
 import Network from './components/Network/Network.jsx';
-import Terminal from './components/Terminal/Terminal.jsx';
+import Terminal from './pages/Terminal.jsx';
 import './App.css';
 
 
